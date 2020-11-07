@@ -42,7 +42,7 @@ Lists every device represented as a file. Data from devices can be read with fil
 `/sbin/init` First process that initializes the system. Init calls bash scripts in serial, on after another.
 
 ### systemd
-Replacement for init process that is used be the most Linux distributions nowadays. Starts process in parallel. It can also listen to events e.g. if new hardware gets attached. Systemd has instructions for each daemon that it starts in a text file, so called unit files.
+Replacement for init process that is used be the most Linux distributions nowadays. Starts processes in parallel. It can also listen to events e.g. if new hardware gets attached. Systemd has instructions for each daemon that it starts in a text file, so called unit files.
 
 ![alt text](images/linux-boot-process-systemd.jpg)
 
@@ -64,7 +64,7 @@ Replacement for init process that is used be the most Linux distributions nowada
 
 `systemctl enable nginx.service` Enable the service to start automatically at boot time
 
-`systemctl list-unit --all` Display units. With --all flas, also the inactive units are displayed
+`systemctl list-unit --all` Display units. --all flag displays also the inactive units
 
 `systemctl list-unit-files` Display all unit files.
 
